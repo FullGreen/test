@@ -1,0 +1,24 @@
+--->  Some of the ports you installed have notes:
+  maven2 has the following notes:
+    To make maven 2.2.1 the default, please run
+    	sudo port select --set maven maven2
+  python27 has the following notes:
+    To make this the default Python or Python 2 (i.e., the version run by the
+    'python' or 'python2' commands), run one or both of:
+    
+        sudo port select --set python python27
+        sudo port select --set python2 python27
+    
+    ##############################################################
+    # IF YOU ARE USING PYTHON FROM THE TERMINAL, PLEASE INSTALL:
+    #   py27-readline
+    # TO AVOID A LIBEDIT / PYTHON INTERACTION ISSUE.
+    # REF: https://trac.macports.org/ticket/48807
+    ##############################################################
+  rsync has the following notes:
+    To use the rsyncd server you must copy /opt/local/etc/rsyncd.conf.example to
+    rsyncd.conf and add your modules there. See 'man rsyncd.conf' for more
+    information.
+  wget has the following notes:
+    To customize wget, you can copy /opt/local/etc/wgetrc.sample to
+    /opt/local/etc/wgetrc and then make changes.
